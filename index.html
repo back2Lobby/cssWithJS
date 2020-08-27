@@ -10,6 +10,24 @@
 <body>
 
     <style id="mystyle">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li>a[target=_blank] {
+            color: red;
+        }
+
+        :root {
+            color: lightgreen;
+        }
+
+        body {
+            background-color: #333;
+        }
+
         .my_box {
             background-color: coral;
             text-align: center;
@@ -28,10 +46,20 @@
             width: 100px;
             height: 100px;
         }
+
+        .all>li {
+            font-size: 1.3em;
+        }
     </style>
     <div class="my_box">Hello World</div>
     <div id="abcd">ABCDEF</div>
-    <script src="app.js"></script>
+    <div class="all">
+        <li>Name</li>
+        <li>Class</li>
+        <li>RollNumber</li>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script src="test.js"></script>
 </body>
 
 </html>

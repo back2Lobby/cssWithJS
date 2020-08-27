@@ -5,7 +5,6 @@ function getAllCss(styleElement) {
 
     //save all these class/ids to a global object
     eval.call(this, 'var allcss = {data:[]}');
-    1
     var name;
     var properties;
     var className_org;
