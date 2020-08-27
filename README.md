@@ -14,7 +14,7 @@ It only works with the internal CSS (css in style tag). Just put the css that yo
 - Access the package throught cdn.
 
 ## CDN:
-`https://cdn.jsdelivr.net/gh/Tayyab1101/cssWithJS@1.0/cssWithJS.js"`
+`https://cdn.jsdelivr.net/gh/Tayyab1101/cssWithJS@1.0/cssWithJS.js`
 
 ## Demo:
 In this demo, we are accessing it through cdn.
