@@ -10,7 +10,6 @@ It only works with the internal CSS (css in style tag). Just put the css that yo
 ## Features:
 
 - You can update any property in the target style tag.
-- You can now change the 'display' property with js also.
 - Access the package throught cdn.
 
 ## CDN:
