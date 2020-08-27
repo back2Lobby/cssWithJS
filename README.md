@@ -2,7 +2,7 @@
 
 Css Magic With JavaScript.
 
-![Alt Text](https://imgur.com/a/qVy3ugO)
+![Alt Text](blob:https://imgur.com/da9d1cbf-d807-4904-9246-4cb32e3fae7e)
 
 ### Important:
 It only works with the internal CSS (css in style tag). Just put the css that you want to change with JavaScript in a style tag, give it an ID and that's it. No other css including inline, internal or external will be affected. So, it is recommended to put only those classes/ids etc in the target style tag that you want to update with Javascript.
