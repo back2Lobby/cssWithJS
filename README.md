@@ -13,6 +13,9 @@ It only works with the internal CSS (css in style tag). Just put the css that yo
 - You can now change the 'display' property with js also.
 - Access the package throught cdn.
 
+## CDN:
+`<script src="https://cdn.jsdelivr.net/gh/Tayyab1101/cssWithJS@1.0/cssWithJS.js"></script>`
+
 ## Demo:
 In this demo, we are accessing it through cdn.
 ```
