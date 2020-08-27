@@ -16,6 +16,11 @@ It only works with the internal CSS (css in style tag). Just put the css that yo
 ## CDN:
 `https://cdn.jsdelivr.net/gh/Tayyab1101/cssWithJS@1.0/cssWithJS.js`
 
+## Instructions:
+- Use `cssWithJS(style-tag-id-or-class-name-here);` to link that element with cssWithJS
+- To update a css property use `updateCss.magic(css-query-name-here,css-property-here,css-property-value-here);`
+- It can't add a new property, but it can update it very easily. (This feature might be added be upcomming release)
+
 ## Demo:
 In this demo, we are accessing it through cdn.
 ```
