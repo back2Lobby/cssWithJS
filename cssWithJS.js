@@ -1,6 +1,6 @@
-var styleElement = document.querySelector("#mystyle");
-(function cssWithJS(styleElement) {
-    styleElement = styleElement.innerHTML;
+function cssWithJS(styleElemID) {
+    var styleElemID = styleElemID;
+    var styleElement = document.querySelector(styleElemID).innerHTML;
     var all = styleElement.match(/[^\n].*?{.*?}/gms);
     //save all these class/ids to a global object
     eval.call(this, 'var updateCss = {queries:[],data:[],magic: function(query,name,value){if(this.queries.indexOf(query) == -1){return -1;}else{if(this.data[this.queries.indexOf(query)].propertiesNames.indexOf(name) == -1){return null;}else{this.data[this.queries.indexOf(query)].propertiesValues[this.data[this.queries.indexOf(query)].propertiesNames.indexOf(name)] = value;this.updateCss.update();}}}}');
@@ -15,9 +15,8 @@ var styleElement = document.querySelector("#mystyle");
         //push names in global object
         updateCss.queries.push(name);
         //get all the css properties
-        fullProperties = query.match(/[a-z].*?;$/gm);
-        propertiesNames = query.match(/[a-z].*?:/gm);
-        propertiesValues = query.match(/:.*?;/gm);
+        var propertiesNames = query.match(/[a-z].*?:/gm);
+        var propertiesValues = query.match(/:.*?;/gm);
         propertiesNames.forEach((item, index) => {
             propertiesNames[index] = item.replace(/\s*?:/, "");
         });
@@ -46,11 +45,10 @@ var styleElement = document.querySelector("#mystyle");
                     single_query += "}\n";
                     modified_query += single_query;
                 });
-                document.querySelector('#mystyle').innerHTML = modified_query;
+                document.querySelector(styleElemID).innerHTML = modified_query;
             }
         }
         eval('updateCss.updateCss = updater');
     });
-})();
-cssWithJS(styleElement);
-updateCss.magic('body', 'background-color', 'red');
+}
+eval.call('window.cssObject = cssWithJS()');
