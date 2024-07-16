@@ -22,7 +22,7 @@ It only works with the internal CSS (css in style tag). Just put the css that yo
 
 ## Demo:
 In this demo, we are accessing it through cdn.
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
